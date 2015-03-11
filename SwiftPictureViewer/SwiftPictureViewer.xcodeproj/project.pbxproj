@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B4644A81AB0629A002BD537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644A71AB0629A002BD537 /* AppDelegate.swift */; };
-		3B4644AA1AB0629A002BD537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644A91AB0629A002BD537 /* ViewController.swift */; };
 		3B4644AD1AB0629A002BD537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4644AB1AB0629A002BD537 /* Main.storyboard */; };
 		3B4644AF1AB0629A002BD537 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4644AE1AB0629A002BD537 /* Images.xcassets */; };
 		3B4644B21AB0629A002BD537 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4644B01AB0629A002BD537 /* LaunchScreen.xib */; };
@@ -21,6 +20,7 @@
 		3B4644D91AB06549002BD537 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644D81AB06549002BD537 /* NetworkManager.swift */; };
 		3B4644DB1AB0657E002BD537 /* SimpleNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644DA1AB0657E002BD537 /* SimpleNetwork.swift */; };
 		3B4644DD1AB06591002BD537 /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644DC1AB06591002BD537 /* String+Hash.swift */; };
+		3B4644E01AB069C8002BD537 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4644DF1AB069C8002BD537 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		3B4644A21AB0629A002BD537 /* SwiftPictureViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPictureViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4644A61AB0629A002BD537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4644A71AB0629A002BD537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B4644A91AB0629A002BD537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B4644AC1AB0629A002BD537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B4644AE1AB0629A002BD537 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3B4644B11AB0629A002BD537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		3B4644D81AB06549002BD537 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3B4644DA1AB0657E002BD537 /* SimpleNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetwork.swift; sourceTree = "<group>"; };
 		3B4644DC1AB06591002BD537 /* String+Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
+		3B4644DF1AB069C8002BD537 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +97,12 @@
 		3B4644A41AB0629A002BD537 /* SwiftPictureViewer */ = {
 			isa = PBXGroup;
 			children = (
-				3B4644A71AB0629A002BD537 /* AppDelegate.swift */,
-				3B4644A91AB0629A002BD537 /* ViewController.swift */,
 				3B4644AB1AB0629A002BD537 /* Main.storyboard */,
+				3B4644DF1AB069C8002BD537 /* TableViewController.swift */,
 				3B4644C71AB062D8002BD537 /* PhotoBrowserViewController.swift */,
 				3B4644C91AB062E5002BD537 /* PhotoBrowser.storyboard */,
 				3B4644AE1AB0629A002BD537 /* Images.xcassets */,
-				3B4644B01AB0629A002BD537 /* LaunchScreen.xib */,
+				3B4644DE1AB06994002BD537 /* Lib */,
 				3B4644A51AB0629A002BD537 /* Supporting Files */,
 			);
 			path = SwiftPictureViewer;
@@ -112,10 +111,8 @@
 		3B4644A51AB0629A002BD537 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B4644D81AB06549002BD537 /* NetworkManager.swift */,
-				3B4644DA1AB0657E002BD537 /* SimpleNetwork.swift */,
-				3B4644DC1AB06591002BD537 /* String+Hash.swift */,
-				3B4644CB1AB0638F002BD537 /* SVProgressHUD */,
+				3B4644A71AB0629A002BD537 /* AppDelegate.swift */,
+				3B4644B01AB0629A002BD537 /* LaunchScreen.xib */,
 				3B4644A61AB0629A002BD537 /* Info.plist */,
 				3B4644D71AB06415002BD537 /* SwiftPictureViewer-Bridge.h */,
 			);
@@ -150,6 +147,17 @@
 				3B4644D11AB0638F002BD537 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		3B4644DE1AB06994002BD537 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3B4644CB1AB0638F002BD537 /* SVProgressHUD */,
+				3B4644D81AB06549002BD537 /* NetworkManager.swift */,
+				3B4644DA1AB0657E002BD537 /* SimpleNetwork.swift */,
+				3B4644DC1AB06591002BD537 /* String+Hash.swift */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +265,10 @@
 				3B4644D91AB06549002BD537 /* NetworkManager.swift in Sources */,
 				3B4644C81AB062D8002BD537 /* PhotoBrowserViewController.swift in Sources */,
 				3B4644DD1AB06591002BD537 /* String+Hash.swift in Sources */,
-				3B4644AA1AB0629A002BD537 /* ViewController.swift in Sources */,
 				3B4644D41AB0638F002BD537 /* SVProgressHUD.m in Sources */,
 				3B4644DB1AB0657E002BD537 /* SimpleNetwork.swift in Sources */,
 				3B4644A81AB0629A002BD537 /* AppDelegate.swift in Sources */,
+				3B4644E01AB069C8002BD537 /* TableViewController.swift in Sources */,
 				3B4644D21AB0638F002BD537 /* SVIndefiniteAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
